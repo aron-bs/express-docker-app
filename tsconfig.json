@@ -1,0 +1,29 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "include": ["src/**/*.ts", "__tests__/**/*.ts"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "~routers": ["src/routers"],
+      "~utils": ["src/utils.ts"]
+    },
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es5", "es6"],
+    "outDir": "build",
+    "moduleResolution": "node",
+    "rootDirs": [],
+    "strict": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"]
+  }
+}
